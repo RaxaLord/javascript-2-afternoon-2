@@ -81,11 +81,20 @@ var nums = [1, 2, 3, 6, 22, 98, 45, 23, 22, 12];
   Return an array that contains the even numbers from the nums array.
 */
 
+// - make an empty arr
+// - make function that takes in nums
+// - for loop to check through arr being passed in
+// - if the index is equal to even
+// - then send it to the empty arr
+// - if Not, repeat the for loop for rest of arr
+
 function evenFinder(nums) {
   let evenNums = [];
 
-  for (i = 0; i % 2 === 0; ) {
-    evenNums.push(i);
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      evenNums.push(nums[i]);
+    }
   }
 
   return evenNums;
